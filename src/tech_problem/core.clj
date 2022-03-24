@@ -1,4 +1,3 @@
-(import [java.lang.Math])
 (ns tech-problem.core
   (:gen-class))
 
@@ -50,8 +49,8 @@
         power (:power best-link)]
     (println
       (condp = (:power best-link)
-        0 (str "No link station within reach for point " devx ", " devy)
-        (str "Best link station for point " devx "," devy " is " stationx "," stationy " with power " power)
+        0.0 (str "No link station within reach for point (" devx ", " devy ")")
+        (str "Best link station for point (" devx "," devy ") is (" stationx "," stationy ") with power " power)
       )
     )
   )
